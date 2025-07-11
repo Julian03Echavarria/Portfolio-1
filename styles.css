@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(172, 200, 226);
+}
+
+h1 {
+  color: rgb(7, 43, 77);
+  text-align: center;
+  background-color: rgb(136, 180, 221);
+  text-transform: uppercase;
+  padding: 16px 0px;
+}
+
+.pinicial {
+  text-align: center;
+  font-size: 1.2rem;
+  color: rgb(7, 43, 77);
+}
+
+.mainindex {
+  display: flex;
+  flex-direction: row;
+  height: auto;
+}
+
+.mainindex div {
+  height: 50%;
+  width: 50%;
+  align-items: center;
+}
+
+.hpagina {
+  padding: 2em;
+  color: rgb(2, 19, 36);
+  padding-bottom: 8px;
+  text-align: justify;
+}
+
+.ppagina {
+  padding-left: 2em;
+  color: rgb(2, 19, 36);
+  font-size: 1.1em;
+  width: 90%;
+  text-align: justify;
+}
+
+.cajaexp {
+  padding: 2em;
+}
+
+.cajaform {
+  padding: 1.1em;
+  background-color: rgb(11, 73, 131);
+  display: flex;
+  flex-direction: row;
+  color: rgb(215, 236, 255);
+  text-align: center;
+  margin: 16px;
+  align-items: center;
+}
+
+input {
+  margin: 16px;
+}
+
+#foto1 {
+  height: auto;
+  width: auto;
+  padding: 2em;
+}
+
+#foto2 {
+  padding: 2em;
+  margin-left: 20%;
+}
+
+#foto3 {
+  padding: 2em;
+  margin-left: 15%;
+}
+
+a {
+  color: rgb(173, 213, 250);
+  display: block;
+  text-decoration: none;
+}
+
+/*label {
+  color: rgb(215, 236, 255);
+  text-align: center;
+  padding: 4px;
+  margin: 8px;
+}*/
+
+/* Footer */
+
+footer {
+  color: rgb(173, 213, 250);
+  outline-color: rgb(173, 213, 250);
+  bottom: auto;
+  position: absolute;
+  width: 100%;
+  background-color: rgb(7, 43, 77);
+  text-align: left;
+  padding: 1.5em;
+}
+
+.footer-div {
+  margin-bottom: 16px;
+}
+
+.footer-li {
+  border: 4px;
+  padding: 8px;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  background-color: rgb(4, 27, 49);
+}
+
+.footer-div2 {
+  margin-top: 16px;
+  font-size: 12px;
+  text-align: center;
+}

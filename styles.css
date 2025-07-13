@@ -47,20 +47,21 @@ h1 {
   .mainindex {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: 12px;
+    height: 450px;
   }
 
   #indexgrid1 {
-    grid-column: 1/5;
+    grid-column: 1/9;
     grid-row: 1/2;
     align-content: center;
     justify-content: center;
   }
 
   #indexgrid2 {
-    grid-column: 5/9;
-    grid-row: 1/2;
+    grid-column: 2/4;
+    grid-row: 2/3;
   }
 }
 

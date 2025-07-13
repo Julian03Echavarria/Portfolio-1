@@ -14,18 +14,22 @@ h1 {
   background-color: rgb(136, 180, 221);
   text-transform: uppercase;
   padding: 16px 0px;
+  width: 100%;
 }
 
 .pinicial {
   text-align: center;
   font-size: 1.2rem;
   color: rgb(7, 43, 77);
+  flex-grow: 1;
 }
 
 .mainindex {
   display: flex;
   flex-direction: row;
   height: auto;
+  width: 100%;
+  margin-bottom: 12px;
 }
 
 .mainindex div {
@@ -34,24 +38,97 @@ h1 {
   align-items: center;
 }
 
-.hpagina {
-  padding: 2em;
-  color: rgb(2, 19, 36);
-  padding-bottom: 8px;
-  text-align: justify;
-}
-
-.ppagina {
-  padding-left: 2em;
-  color: rgb(2, 19, 36);
-  font-size: 1.1em;
-  width: 90%;
-  text-align: justify;
-}
+/* Proyectos */
 
 .cajaexp {
   padding: 2em;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  align-items: center;
+  min-width: 100%;
+  min-height: auto;
+  height: 33%;
 }
+
+#exp1 {
+  background-color: rgb(181, 206, 230);
+  grid-column: 1/3;
+  grid-row: 1/2;
+  margin: 10px;
+  padding: 10px;
+}
+
+#exp4 {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin: 10px;
+  padding: 10px;
+}
+
+#imgpro1 {
+  width: 100%;
+  height: 100%;
+}
+
+#exp2 {
+  background-color: rgb(181, 206, 230);
+  grid-column: 1/3;
+  grid-row: 2/3;
+  margin: 10px;
+  padding: 10px;
+}
+
+#exp5 {
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin: 10px;
+  padding: 10px;
+}
+
+#imgpro2 {
+  width: 100%;
+  height: 100%;
+}
+
+#exp3 {
+  background-color: rgb(181, 206, 230);
+  grid-column: 1/3;
+  grid-row: 3/4;
+  margin: 10px;
+  padding: 10px;
+}
+
+#exp6 {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin: 10px;
+  padding: 10px;
+}
+
+#imgpro3 {
+  width: 100%;
+  height: 100%;
+}
+
+.phpagina {
+  margin: 20px;
+  color: rgb(2, 19, 36);
+  padding-bottom: 8px;
+  text-align: center;
+  text-justify: center;
+}
+
+.pppagina {
+  margin: 0px 40px 40px 40px;
+  color: rgb(2, 19, 36);
+  font-size: 1.1em;
+  width: 90%;
+  text-align: center;
+  text-justify: center;
+}
+
+/*Formulario*/
 
 .cajaform {
   padding: 1.1em;
@@ -69,8 +146,8 @@ input {
 }
 
 #foto1 {
-  height: auto;
-  width: auto;
+  height: 100%;
+  width: 100%;
   padding: 2em;
 }
 
@@ -90,22 +167,36 @@ a {
   text-decoration: none;
 }
 
-/*label {
-  color: rgb(215, 236, 255);
-  text-align: center;
-  padding: 4px;
-  margin: 8px;
-}*/
+.hpagina {
+  padding: 2em;
+  color: rgb(2, 19, 36);
+  padding-bottom: 8px;
+  text-align: justify;
+}
+
+.ppagina {
+  padding-left: 2em;
+  color: rgb(2, 19, 36);
+  font-size: 1.1em;
+  width: 90%;
+  text-align: justify;
+}
 
 /* Footer */
 
+.body-grid {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  margin: 0;
+}
+
 footer {
+  background: #333;
   color: rgb(173, 213, 250);
   outline-color: rgb(173, 213, 250);
-  bottom: auto;
-  position: absolute;
-  width: 100%;
   background-color: rgb(7, 43, 77);
+  padding: 1em;
   text-align: left;
   padding: 1.5em;
 }
@@ -114,7 +205,12 @@ footer {
   margin-bottom: 16px;
 }
 
-.footer-li {
+footer ul {
+  border: 4px;
+  padding: 8px;
+}
+
+footer li {
   border: 4px;
   padding: 8px;
   display: inline-block;
